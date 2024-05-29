@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie List</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    
+    <nav class="navbar bg-primary navbar-expand-lg ">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1 text-white">Movie List</span>
+        </div>
+    </nav>
+
+    <br>
+
+    <form class="container">
+
+        <div class="row">
+
+            <div class="col">
+                <label for="enterInputTitle">Enter Movie Title</label>
+                <input id="user_title" type="text" class="form-control" placeholder="Title">
+            </div>
+
+            <div class="col">
+                <label for="enterPosterUrl">Enter URL for Poster</label>
+                <input id="poster_URL" type="text" class="form-control" placeholder="URL">
+            </div>
+
+            <div class="col">
+                <label for="enterMovieId">Enter Movie id starting with 1</label>
+                <input id="movie_id" type="text" class="form-control" placeholder="id #">
+            </div>
+
+        </div>
+
+        <br>
+
+        <button id="btn_submit" class="btn btn-info text-white col-2" type="button">Submit</button>
+
+    </form>
+
+    <br>
+
+    <div id="card_container" class="container border d-flex flex-wrap">
+        
+
+    </div>
+
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="/index.js"></script>
+</body>
+</html>

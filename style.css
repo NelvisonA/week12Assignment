@@ -1,0 +1,26 @@
+img {
+    height: 12em;
+}
+
+.movie_description {
+    width: 100%;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    background-color: #0dcaf0;
+}
+
+.button_delete {
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.card:hover .movie_description, .card:hover .button_delete {
+    visibility: visible;
+    opacity: .9;
+    transition: all .6s ease-out;
+}
